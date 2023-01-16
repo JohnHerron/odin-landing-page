@@ -1,0 +1,172 @@
+* {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}  
+
+.header,
+.hero,
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+}
+
+.header,
+.hero,
+.content,
+.quote-section,
+.call-to-action
+.footer {
+    padding: 0px 96px;
+}
+
+.navbar > a,
+.hero-text > .secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header {
+    padding: 8px auto;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    flex: auto;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.navbar {
+    display: flex;
+    flex: auto;
+    gap: 24px;
+    justify-content: flex-end;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    padding: 70px 96px;
+}
+
+.hero-text {
+    flex: 0 1 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text > .main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
+.hero-text > .secondary-text {
+    padding-bottom: 8px;
+}
+
+.hero > img {
+    display: block;
+    flex: 0 1 450px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    flex: auto;
+    justify-content: center;
+    font-size: 10px;
+    padding: 20px;
+}
+
+button {
+    flex: 0 1 0px;
+    width: 80px;
+    background-color: #3882F6;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    display: block;
+    padding: 4px;
+}
+
+.call-to-action > button {
+    border-style: solid;
+    border-color: white;
+    align-self: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    flex: 3 3 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.info-header {
+    flex: 1 1 50px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.info.cards {
+    flex: 4 4 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.info.cards > .card {
+    width: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.info.cards > .card > img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
+
+.info.cards > .card > p {
+    margin: 5px 0px;
+}
+
+.quote-section {
+    flex: 1 1 200px;
+    background-color: #E5E7EB;
+    padding: 30px 96px;
+}
+
+.quote > .text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
