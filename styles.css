@@ -20,9 +20,6 @@ body {
 
 .header,
 .hero,
-.content,
-.quote-section,
-.call-to-action
 .footer {
     padding: 0px 96px;
 }
@@ -112,7 +109,14 @@ button {
 
 .content {
     display: flex;
+    align-items: stretch;
+}
+
+.content-container {
+    flex: auto;
+    display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
 
 .info {
@@ -161,7 +165,14 @@ button {
 .quote-section {
     flex: 1 1 200px;
     background-color: #E5E7EB;
-    padding: 30px 96px;
+    padding: 80px 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    flex: 0 1 750px;
 }
 
 .quote > .text {
@@ -169,4 +180,11 @@ button {
     font-weight: lighter;
     font-style: italic;
     color: #1F2937;
+}
+
+.quote > .author {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-right: 70px;
 }
