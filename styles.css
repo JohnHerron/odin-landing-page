@@ -90,8 +90,8 @@ body {
 }
 
 button {
-    flex: 0 1 0px;
-    width: 80px;
+    flex: 0 1 80px;
+    width: 90px;
     background-color: #3882F6;
     border-style: none;
     border-radius: 5px;
@@ -101,10 +101,11 @@ button {
     padding: 4px;
 }
 
-.call-to-action > button {
+.action-container > button {
     border-style: solid;
     border-color: white;
     align-self: center;
+    height: 30px;
 }
 
 .content {
@@ -163,7 +164,7 @@ button {
 }
 
 .quote-section {
-    flex: 1 1 200px;
+    flex: 3 3 200px;
     background-color: #E5E7EB;
     padding: 80px 96px;
     display: flex;
@@ -187,4 +188,32 @@ button {
     font-size: 24px;
     font-weight: bolder;
     padding-right: 70px;
+}
+
+.call-to-action {
+    flex: 2 2 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-container {
+    flex: 0 1 800px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.action-header,
+.action-text {
+    color: white;
+    font-weight: 16px;
+}
+
+.action-header {
+    font-size: 24px;
+    font-weight: bolder;
 }
